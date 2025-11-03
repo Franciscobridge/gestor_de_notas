@@ -1,5 +1,4 @@
 "use client";
-
 import { FeatureCard } from "@/components/feature-card";
 import { PricingCard } from "@/components/pricing-card";
 import { Button } from "@/components/ui/button";
@@ -11,14 +10,12 @@ import {
   Layers,
   Sparkles,
   Users,
-  CheckCircle,
 } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen bg-linear-to-b from-orange-50 to-white text-gray-800">
-      {/* Header */}
       <header className="flex items-center justify-between px-8 py-5 border-b border-orange-100 bg-white/70 backdrop-blur-md sticky top-0 z-50 shadow-sm">
         <div className="flex items-center gap-2 text-orange-600 font-bold text-xl">
           <GraduationCap className="size-6" />
@@ -57,7 +54,6 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero */}
       <section className="flex flex-col md:flex-row items-center justify-between px-10 md:px-20 py-24 gap-10">
         <div className="flex flex-col gap-6 text-center md:text-left max-w-2xl">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight">
@@ -96,7 +92,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features */}
       <section id="features" className="px-10 md:px-20 py-20 bg-orange-50/60">
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
           Funcionalidades principais
@@ -136,8 +131,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About */}
-      {/* About */}
       <section id="about" className="px-10 md:px-20 py-28 bg-white">
         <div className="max-w-5xl space-y-10">
           <div className="space-y-8">
@@ -170,7 +163,6 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Estatísticas */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center pt-10">
             <div className="bg-orange-50 rounded-xl p-6 shadow-sm hover:shadow-md transition">
               <h3 className="text-3xl text-center font-bold text-orange-600">
@@ -202,7 +194,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pricing */}
       <section id="pricing" className="px-10 md:px-20 py-24 bg-orange-50/60">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
@@ -254,11 +245,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      {/* Footer */}
       <footer className="bg-gray-50 border-t border-gray-200 py-14 px-10 md:px-20 mt-24">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
-          {/* Logo + Descrição */}
           <div className="col-span-1 md:col-span-2 space-y-3">
             <div className="flex items-center gap-2">
               <div className="bg-orange-600 p-2 rounded-lg">
@@ -276,7 +264,6 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Navegação */}
           <div>
             <h4 className="text-gray-900 font-semibold mb-4">Navegação</h4>
             <ul className="space-y-2 text-sm text-gray-600">
@@ -311,7 +298,6 @@ export default function Home() {
             </ul>
           </div>
 
-          {/* Contato */}
           <div>
             <h4 className="text-gray-900 font-semibold mb-4">Contato</h4>
             <ul className="space-y-2 text-sm text-gray-600">
@@ -340,19 +326,18 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Linha inferior */}
         <div className="border-t border-gray-200 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
           <p>
             © {new Date().getFullYear()} Gestor de Notas. Todos os direitos
             reservados.
           </p>
           <div className="flex gap-4 mt-3 md:mt-0">
-            <a href="#" className="hover:text-orange-600 transition">
+            <Link href="#" className="hover:text-orange-600 transition">
               Política de Privacidade
-            </a>
-            <a href="#" className="hover:text-orange-600 transition">
+            </Link>
+            <Link href="#" className="hover:text-orange-600 transition">
               Termos de Uso
-            </a>
+            </Link>
           </div>
         </div>
       </footer>

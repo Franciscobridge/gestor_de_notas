@@ -21,7 +21,6 @@ import { StatCard } from "@/components/stat-card";
 export default function Dashboard() {
   return (
     <div className="flex flex-col w-full h-full gap-6 px-4 md:px-8 py-5 bg-lieaar-to-b from-orange-50/30 to-white">
-      {/* 🔍 Topbar */}
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex flex-col">
           <h1 className="text-2xl md:text-3xl font-bold text-orange-600">
@@ -33,7 +32,6 @@ export default function Dashboard() {
         </div>
 
         <div className="flex gap-2 items-center">
-          {/* Barra de pesquisa */}
           <div className="flex items-center group gap-2 border border-gray-300/70 bg-white px-3 py-2 rounded-xl shadow-sm focus-within:border-orange-600 w-48 md:w-64 transition">
             <Search className="text-gray-500 size-5 group-focus-within:text-orange-600 transition" />
             <input
@@ -43,7 +41,6 @@ export default function Dashboard() {
             />
           </div>
 
-          {/* Notificação */}
           <Button
             variant="outline"
             className="w-10 h-10 rounded-full group flex items-center justify-center hover:bg-orange-100 transition"
@@ -53,7 +50,6 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* 🧮 Cards de resumo */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         <StatCard
           title="Instituições"
@@ -81,7 +77,6 @@ export default function Dashboard() {
         />
       </div>
 
-      {/* 📋 Tabela de notas */}
       <Card className="border-orange-100 shadow-sm hover:shadow-md transition">
         <CardHeader>
           <CardTitle className="flex justify-between items-center">

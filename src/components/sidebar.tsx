@@ -3,12 +3,12 @@
 import {
   GraduationCap,
   Home,
-  BookOpen,
   ClipboardList,
   BarChart3,
   Settings,
   LogOut,
   Menu,
+  Building2,
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -23,10 +23,10 @@ export function Sidebar() {
 
   const navItems = [
     { name: "Dashboard", href: "/dashboard", icon: Home },
-    { name: "Instituições", href: "/dashboard/institutions", icon: BookOpen },
+    { name: "Instituições", href: "/dashboard/institutions", icon: Building2 },
     { name: "Avaliações", href: "/dashboard/avaliacoes", icon: ClipboardList },
     { name: "Médias", href: "/dashboard/medias", icon: BarChart3 },
-    { name: "Configurações", href: "/dashboard/configuracoes", icon: Settings },
+    { name: "Configurações", href: "/dashboard/settings", icon: Settings },
   ];
 
   return (

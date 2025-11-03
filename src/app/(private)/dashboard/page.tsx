@@ -1,4 +1,4 @@
-import { Bell, BookOpenText, Search, TrendingUp } from "lucide-react";
+import { Bell, Building2, Search, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -16,6 +16,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { StatCard } from "@/components/stat-card";
 
 export default function Dashboard() {
   return (
@@ -59,7 +60,7 @@ export default function Dashboard() {
           description="Instituições registradas"
           value="3"
           icon={
-            <BookOpenText className="text-orange-600 size-5 absolute right-6" />
+            <Building2 className="text-orange-600 size-5 absolute right-6" />
           }
         />
         <StatCard
@@ -150,34 +151,5 @@ export default function Dashboard() {
         </CardContent>
       </Card>
     </div>
-  );
-}
-
-function StatCard({
-  title,
-  description,
-  value,
-  icon,
-}: {
-  title: string;
-  description: string;
-  value: string;
-  icon: React.ReactNode;
-}) {
-  return (
-    <Card className="border border-orange-100 shadow-sm hover:shadow-md hover:border-orange-200 transition relative bg-white">
-      <CardHeader>
-        <CardTitle className="text-gray-700">{title}</CardTitle>
-        {icon}
-      </CardHeader>
-      <CardContent>
-        <div className="min-w-52 -mt-5">
-          <div className="flex items-baseline gap-1.5">
-            <h1 className="text-3xl font-bold text-orange-600">{value}</h1>
-          </div>
-          <p className="text-sm text-gray-600">{description}</p>
-        </div>
-      </CardContent>
-    </Card>
   );
 }
